@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* ajustes generales de scroll y bofy */
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--brownB) var(--brownB);
+    scrollbar-width: thin;
+}
+
+body {
+    font-weight: 100;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--brownB);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--brownB);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--brownB);
+}
+
+
+/*
+🔧 Habilidades técnicas (Tech Skills)
+fa-code → <i class="fas fa-code"></i> — Genérico para programación
+fa-terminal → <i class="fas fa-terminal"></i> — Ideal para desarrollo backend o bash
+fa-laptop-code → <i class="fas fa-laptop-code"></i> — Frontend o full stack
+fa-database → <i class="fas fa-database"></i> — Bases de datos
+fa-network-wired → <i class="fas fa-network-wired"></i> — Redes o backend
+fa-cloud → <i class="fas fa-cloud"></i> — Cloud computing / DevOps
+fa-cogs → <i class="fas fa-cogs"></i> — Ingeniería de software en general
+
+
+🎨 Habilidades creativas / UI/UX
+fa-paint-brush → <i class="fas fa-paint-brush"></i> — Diseño UI
+fa-pencil-ruler → <i class="fas fa-pencil-ruler"></i> — UX o diseño general
+fa-layer-group → <i class="fas fa-layer-group"></i> — Maquetación y estructuras
+fa-bezier-curve → <i class="fas fa-bezier-curve"></i> — Diseño vectorial o animaciones
+
+
+🌐 Idiomas / Soft skills / Generales
+fa-language → <i class="fas fa-language"></i> — Idiomas
+fa-users → <i class="fas fa-users"></i> — Trabajo en equipo
+fa-lightbulb → <i class="fas fa-lightbulb"></i> — Creatividad / ideas
+fa-comments → <i class="fas fa-comments"></i> — Comunicación
+fa-check-circle → <i class="fas fa-check-circle"></i> — Aptitudes comprobadas
+
+
+✅ Íconos de uso frecuente en secciones de listas
+fa-circle o fa-dot-circle — Para marcadores elegantes
+fa-arrow-right o fa-angle-right — Flechas para listas limpias
+fa-star — Nivel de dominio o rating (ej: 4/5 estrellas)
+fa-certificate — Certificaciones
+*/
+
+/* ARCHIVOS DE LAS FUENTES DE LETRAS */
+@font-face {
+    font-family: "neue";
+    src: url(../plugins/fonts/neueM/PPNeueMontreal-Bold.otf);
+}
+
+@font-face {
+    font-family: "neue-book";
+    src: url(../plugins/fonts/neueM/PPNeueMontreal-Book.otf);
+}
+
+@font-face {
+    font-family:"neue-medium" ;
+    src: url(../plugins/fonts/neueM/PPNeueMontreal-Medium.otf);
+}
+
+@font-face {
+    font-family: "neue-thin";
+    src: url(../plugins/fonts/neueM/PPNeueMontreal-Thin.otf);
+}
+
+@font-face {
+    font-family: "monument" ;
+    src: url(../plugins/fonts/monument/PPMonumentExtended-Black.otf);
+}
+
+@font-face {
+    font-family: "monument-light";
+    src: url(../plugins/fonts/monument/PPMonumentExtended-Light.otf);
+}
+
+@font-face {
+    font-family: "monument-regular";
+    src: url(../plugins/fonts/monument/PPMonumentExtended-Regular.otf);
+}
+
+/* VARIABLES DE LA PALETA DE COLORES */ 
+:root {
+    --green: #21281a;
+    --cream: #ebe0d5;
+    --grey: #68615a;
+    --greyF: #2e2b28;
+    --brown: #432818;
+    --brownN: #4328185b;
+    --brownB:#0f0905;
+    --blue: #08111a;
+}
+
+
+/* FONDO OSCURO QUE SE MUEVE CON EL SCROLL*/
+.parallax {
+    position: relative;
+    background: var(--cream);   
+}
+
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--brownB);
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.parallax > .main,
+  .parallax > *:not(.parallax-overlay) {
+    position: relative;
+    z-index: 2;
+}
+
+/* NAVEGADOR CON ANIMACION MARQUEE CYBER*/ 
+.nav {
+    height: 80px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: flex-end;
+    z-index: 9999;
+}
+
+.nav-links div {
+    display: flex;
+    background: transparent;
+}
+
+.nav-links div a {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links div a span {
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--cream);
+    font-family: "monument";
+}
+
+.marquee {
+    height: 25px;
+    width: 110px;
+    margin: 20px 20px 20px 0px; 
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+
+}
+
+.marquee a {
+    background-color: var(--brown);
+    display: inline-block;
+    width: 200%;
+    position: absolute;
+    left: 0;
+
+}
+
+.marquee a:hover {
+    animation: marquee-nav 1s linear infinite;
+}
+
+.marquee span {
+    width: 50%;
+    display: inline-block;
+}
+
+@keyframes marquee-nav {
+    0% { left: 0; }
+    100% { left: -102%; }
+}
+/* ========== MEDIA QUERIES ========== */
+
+/* Celulares pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .nav {
+        height: 60px;
+        justify-content: end;
+    }
+
+    .nav-links div a span {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .marquee {
+        width: 75px;
+        height: 20px;
+        margin: 5px;
+    }
+}
+
+/* Celulares grandes (481px a 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .nav {
+        height: 65px;
+    }
+
+    .nav-links div a span {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .marquee {
+        width: 100px;
+        height: 22px;
+        margin: 12px;
+    }
+}
+
+/* Tablets (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav {
+        height: 70px;
+    }
+
+    .nav-links div a span {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    .marquee {
+        width: 105px;
+        height: 23px;
+        margin: 15px 15px 15px 0px;
+    }
+}

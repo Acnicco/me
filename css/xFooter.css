@@ -1,0 +1,129 @@
+.last-ar {
+    padding: 20px;
+}
+.footer {
+    height: 20vh;
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--grey);
+    border-radius: 5px;
+    transition: transform .6s ease-in-out;
+}
+
+.title-footer, .footer-network {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "monument";
+}
+
+.title-footer span {
+    padding: 20px;
+}
+
+.title-footer span a {
+    color: var(--cream);
+    transition: color .25s ease-in-out, letter-spacing .25s ease-in-out, border-bottom .6s ease-in-out;
+}
+
+.tf-c a{
+    border-bottom: 1px solid transparent;
+    transition: all .2s;
+}
+
+.tf-c a:hover {
+    border-bottom: 1px solid var(--greyF);
+}
+
+.footer-network div {
+    padding: 20px;
+}
+
+.footer-network div a {
+    color: var(--cream);
+    border-bottom: .75px solid transparent;
+    transition: color .25s ease-in-out, letter-spacing .25s ease-in-out, border-bottom .6s ease-in-out;
+}
+
+.footer-network div a:hover, .tf-back a:hover  {
+    color: var(--greyF);
+    letter-spacing: .7px;
+    border-bottom: 1px solid var(--greyF);
+}
+
+
+.tf-back a:active {
+    color: var(--blue);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Celulares pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .last-ar {
+        padding: 8px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr ;
+        height: auto;
+        padding: 20px 10px 20px 10px;
+    }
+
+    .title-footer, .footer-network {
+        flex-direction: row;
+        font-size: 7px;
+        text-align: center;
+    }
+
+    .title-footer span,
+    .footer-network div {
+        padding: 5px;
+    }
+}
+
+/* Celulares grandes (481px a 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .last-ar {
+        padding: 15px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        padding: 20px;
+    }
+
+    .title-footer, .footer-network {
+        flex-direction: row;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .title-footer span,
+    .footer-network div {
+        padding: 15px;
+    }
+}
+
+/* Tablets (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .title-footer, .footer-network {
+        flex-direction: row;
+        font-size: 15px;
+    }
+
+    .title-footer span,
+    .footer-network div {
+        padding: 15px;
+    }
+}

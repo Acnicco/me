@@ -1,0 +1,108 @@
+.body-c {
+    background-color: var(--brownB);
+}
+
+.credits-ar {
+    display: flex;
+    height: 100vh;
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    font-size: 25px;
+    font-family: "neue";
+    color: var(--cream);
+}
+
+.ca-title {
+    font-family: "monument"; 
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid var(--greyF);
+    transition: all .6s;
+}
+.ca-title:hover {
+    letter-spacing: 3px;
+}
+.container-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:20px ;
+    padding: 20px;
+}
+
+.targettt div span a {
+    font-family: "neue-medium";
+    color: var(--grey);
+    text-decoration: underline;
+}
+
+.targettt div span a:hover {
+    color: var(--greyF);
+    text-decoration: underline;
+}
+
+
+/* estilo del icono de seguir pagina */ 
+.Arrow {
+    margin: auto;
+    width: 28px; 
+    height: 28px;
+}
+
+
+
+/* ================= Media Queries ================= */
+
+/* Celulares pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .credits-ar {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .ca-title {
+        font-size: 24px;
+    }
+
+    .container-c {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+}
+
+/* Celulares grandes (481px a 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .credits-ar {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .ca-title {
+        font-size: 28px;
+    }
+
+    .container-c {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+}
+
+/* Tablets (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .credits-ar {
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .ca-title {
+        font-size: 32px;
+    }
+
+    .container-c {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+}

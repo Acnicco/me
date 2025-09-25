@@ -1,0 +1,62 @@
+.animation-name {
+    display: flex;
+}
+
+.a-n-cont {
+    display: flex;
+    font-size: 30px;
+    font-family: "neue";
+    color: var(--greyF);
+    animation: nameAnimation 15s linear infinite;
+
+}
+
+.a-n-cont div {
+    padding: 0px 5px 0px 5px;
+}
+
+@keyframes nameAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-42%);
+    }
+}
+
+.a-n-cont:hover {
+    animation-play-state: paused;
+}
+
+/* Tablets grandes y laptops pequeñas */
+@media (max-width: 1024px) {
+    /* Reducir fuentes grandes */
+    /* Cambiar grids de 2-3 columnas a 1-2 columnas */
+    /* Ocultar imágenes decorativas grandes */
+    /* Ajustar paddings y márgenes */
+    .animation-name {
+        display: none;
+    }
+}
+
+/* Tablets verticales y móviles grandes */
+@media (max-width: 768px) {
+    /* Poner casi todo en 1 columna */
+    /* Ocultar fondos e imágenes pesadas */
+    /* Reducir tipografías y botones */
+    /* Centrar textos e imágenes */
+    .animation-name {
+        display: none;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    /* Tipografía mínima para lectura */
+    /* Reducir aún más paddings y márgenes */
+    /* Ocultar elementos decorativos sobrantes */
+    /* Ajustar botones y enlaces para que no se salgan de la pantalla */
+    .animation-name {
+        display: none;
+    }
+}

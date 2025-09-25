@@ -1,0 +1,635 @@
+.parallax 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110vh;
+}
+
+.mt-1{
+    display: flex;
+    font-size: 150px;
+    margin-bottom: -40px;
+    color: var(--brownB);
+    font-family: "monument";
+}
+.mt-1-hl {
+    transition: color .5s, transform .5s;
+}
+.mt-1-hl:hover {
+    color: var(--brownN);
+    transform: translateY(-10px);
+}
+
+.mt-2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "monument-regular";
+}
+
+/* ARTICULO 1 (ABOUT ME) */
+
+.first-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ar1-cont {
+    display: grid;
+    margin: 40px;
+    grid-template-columns: 60% 40%;
+    color: var(--cream);
+    height: 100vh;
+}
+
+.ar1-text-c  {
+    margin: 30px;
+    font-family: "monument";
+}
+
+
+
+.title1 {
+    display: flex;
+    font-size: 70px;
+}
+
+.ar1-t-hl {
+    transition: transform .5s, color .2s;
+}
+
+.ar1-t-hl:hover {
+    transform: translateY(-5px);
+    color: var(--greyF);
+}
+
+.title2 {
+    font-size: 45px;
+}
+
+.ar1-p {
+    font-size: 20px;
+    font-family: "monument-regular";
+    padding: 20px 0px 20px 0px;
+}
+
+.ar1-p-hl {
+    color: var(--greyF);
+    letter-spacing: 2px;
+    font-family: "monument";
+    font-size: 25px;
+}
+
+.ar1-text-c ul {
+    font-size: 15px;
+    font-family: "monument-regular";
+    padding: 0px 0px 0px 50px;
+}
+
+.skills-hl {
+    color: var(--greyF);
+}
+
+.ar1-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, var(--brownB), transparent);
+}
+
+.ar1-img img {
+    mix-blend-mode: darken;
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* AR2 Things that i can do */ 
+
+.ar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    color: var(--cream);
+    background: url(../plugins/svg/noseenose2.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ar2-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    font-family: "monument";
+}
+
+.ar2-text h1 {
+    font-weight: 100;
+}
+
+.ar2-text h1 span {
+    padding-bottom: 4px;
+    border-bottom: 4px solid var(--cream);
+}
+
+.ar2-panels-c {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 50px;
+    padding: 35px;
+}
+
+.ar2-panel {
+    display: grid;
+    grid-template-rows: repeat(3fr);
+    padding: 20px;
+    background: var(--brownN);
+    border-radius: 20px;
+}
+
+.ar2-p-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ar2-p-img img {
+    height: 200px;
+    width: auto;
+}
+
+.ar2-panel h1 {
+    font-size: 25px;
+    font-family: "neue";
+    font-weight: 100;
+}
+
+.ar2-panel {
+    font-size: 15px;
+    font-family: "neue-book";
+    font-weight: 100;
+}
+
+.ar2-p-div {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 20px 0px 0px 0px;
+}
+
+.ar2-p-div a {
+    color: var(--cream);
+    font-size: 15px;
+    font-family: "neue";
+    font-weight: 100;
+    padding: 2px 20px 2px 20px;
+    border: 2px solid var(--cream);
+    border-radius: 20px;
+    transition: color .5s, background .5s;
+}
+
+.ar2-p-div a:hover {
+    color: var(--brownN);
+    background: var(--cream);
+}
+/*ar3 My web development proyects */
+.ar3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    color: var(--cream);
+}
+
+.ar3-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ar3-img-ext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nose {
+    position: absolute;
+    background-color: transparent;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    transform: translate(-60%, 0px);
+    border: 1px solid var(--cream);
+}
+
+.nose2 {
+    position: absolute;
+    background-color: transparent;
+    height: 200px;
+    width: 350px;
+    border-radius: 80px;
+    transform: translate(-20%, -30%);
+    border: 1px solid var(--cream); 
+}
+
+.nose3 {
+    position: absolute;
+    background-color: transparent;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    transform: translate(130%, 150%);
+    border: 1px solid var(--cream); 
+}
+
+.nose4 {
+    position: absolute;
+    background-color: transparent;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    transform: translate(300%, 50%);
+    border: 1px solid var(--cream); 
+}
+
+.ar3-projects-c {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 80px 0px 80px ;
+}
+
+.ar3-p-title {
+    font-size: 30px;
+    padding: 20px;
+    font-family: "monument";
+    font-weight: 100;
+}
+
+.ar3-p-title h1 {
+    font-weight: 100;
+}
+
+.ar3-project {
+    border-top: 2px solid var(--cream);
+    padding: 10px;
+}
+
+.ar3-project span, .ar3-project p {
+    font-size: 20px;
+}
+
+.ar3-project span a {
+    color: var(--cream);
+    font-family: "neue";
+    font-weight: 100;
+    border-bottom: .75px solid var(--cream);
+    transition: color .5s, border-bottom .5s;
+}
+
+.ar3-project span a:hover {
+    color: var(--greyF);
+    border-bottom: .75px solid var(--greyF);
+}
+
+.ar3-project p {
+    color: var(--grey);
+    font-family: "neue-book";
+}
+
+/*ar4 My Pixelarts Projects */
+.ar4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    width: auto;
+    color: var(--cream);
+    flex-direction: column;
+}
+
+.ar4-w-title {
+    font-size: 20px;
+    font-family: "monument";
+    font-weight: 100;
+    padding: 20px;
+}
+
+.ar4-w-title h1 {
+    border-bottom: 4px solid var(--grey);
+    font-weight: 100;
+}
+
+.ar4-w-container {
+    width: 550px;
+}
+
+
+.ar4-p {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 30vh;
+}
+
+.ar4-p-img {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.ar4-p-img img {
+    height: 150px;
+}
+
+.ar4-p-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 0px 0px 20px;
+}
+
+.ar4-p-text h1 {
+    font-size: 25px;
+    font-family: "neue";
+    font-weight: 100;
+}
+
+.ar4-p-text p {
+    color: var(--grey);
+    font-size: 20px;
+    font-family: "neue-book";
+    font-weight: 100;
+}
+
+.f-panel {
+    display: flex;
+    transform: translateX(-150px);
+}
+
+.s-panel {
+    display: flex;
+    transform: translateX(150px);
+    flex-direction: row-reverse;
+}
+
+.ar4-w-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ar4-w-footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cream);
+    font-size: 15px;
+    font-family: "neue";
+    font-weight: 100;
+    padding: 10px;
+}
+
+.madeBy h1 {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.madeBy h1 a{
+    color: var(--cream);
+    border-bottom: 1px solid var(--cream);
+    transition: color .5s, border-bottom .5s;
+}
+
+.madeBy h1 a:hover {
+    color: var(--greyF);
+    border-bottom: 1px solid var(--greyF);
+}
+
+.vMore a {
+    color: var(--cream);
+    padding: 2px 20px 2px 20px;
+    border: 2px solid var(--cream);
+    border-radius: 20px;
+    transition: color .5s, background .5s; 
+}
+
+.vMore a:hover {
+    color: var(--brownB);
+    background: var(--cream);
+}
+
+
+
+/* RESPONSIVE DESIGNNNNNNNNNNNNNN */
+/* Tablets grandes y laptops pequeñas */
+
+/* Tablets verticales y móviles grandes */
+@media (max-width: 768px) {
+    .mt-1 {
+        font-size: 55px;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .mt-2 {
+        font-size: 15px;
+    }
+
+    .ar1-cont {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .title1 {
+        font-size: 40px;
+    }
+
+    .title2 {
+        font-size: 25px;
+    }
+
+    .ar1-p {
+        font-size: 15px;
+    }
+
+    .ar1-p-hl {
+        font-size: 15px;
+    }
+
+    .ar1-text-c ul {
+        font-size: 15px;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .ar1-img img {
+        width: 80%;
+        height: 80%;
+    }
+
+    /*ar2*/
+
+    .ar2 {
+        background: none;
+        height: auto;
+    }
+    .ar2-text {
+        font-size: 10px;
+    }
+
+    .ar2-panels-c {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ar2-panel {
+        margin-bottom: 20px;
+    }
+
+    /*ar3*/
+
+    .ar3-c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px ;
+    }
+
+    .nose, .nose2, .nose3, .nose4 {
+        display: none;
+    }
+
+    .ar3-projects-c {
+        width: auto;
+        padding: 0;
+    }
+
+    .ar3-p-title h1 {
+        font-size: 40px;
+    }
+
+    .ar3-project span, .ar3-project p {
+        font-size: 20px;
+    }
+
+    /*ar4*/
+
+    .ar4 {
+        height: auto;
+    }
+
+    .ar4-w-title {
+        font-size: 17px;
+    }
+
+    .ar4-w-container {
+        width: 340px;
+        margin: auto;
+    }
+
+    .ar4-p-text h1 {
+        font-size: 20px;
+    }
+
+    .ar4-p-text  p {
+        font-size: 15px;
+    }
+
+    .f-panel {
+        transform: translateX(0px);
+    }
+    .s-panel {
+        transform: translateX(0px);
+    }
+
+
+    /*ar footer*/
+
+    .ar4-w-footer {
+        grid-template-columns: 60% 40%;
+        width: 340px;
+    }
+    .ar4-w-footer div {
+        font-size: 10px;
+    }
+}
+
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    .mt-1 {
+        font-size: 40px;
+    }
+    .mt-2 {
+        font-size: 12px;
+    }
+
+    .title1 {
+        font-size: 28px;
+    }
+    .title2 {
+        font-size: 18px;
+    }
+    .ar1-p,
+    .ar1-p-hl {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+    .ar1-img img {
+        width: 95%;
+        height: auto;
+    }
+
+    /*ar2*/
+    .ar2-text {
+        font-size: 10px;
+    }
+    .ar2-panel h1 {
+        font-size: 18px;
+    }
+    .ar2-panel {
+        font-size: 13px;
+        padding: 15px;
+    }
+
+    /*ar3*/
+    .ar3-p-title h1 {
+        font-size: 22px;
+    }
+    .ar3-project span, .ar3-project p {
+        font-size: 14px;
+    }
+
+    /*ar4*/
+    .ar4-p-img img {
+        height: 100px;
+    }
+    .ar4-p-text h1 {
+        font-size: 16px;
+    }
+    .ar4-p-text p {
+        font-size: 13px;
+    }
+
+    .ar4-w-footer div {
+        font-size: 10px;
+    }
+
+    /* Botones y links */
+    .ar2-p-div a,
+    .vMore a {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+}
